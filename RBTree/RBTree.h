@@ -9,7 +9,7 @@ enum class Color {RED, BLACK};
 
 struct Node {
     int data;
-    bool color;
+    Color color;
     Node *left, *right, *parent;
 
     Node(int data) {

@@ -5,7 +5,8 @@
 #ifndef DATASTRUCTURE_RBTREEUTIL_H
 #define DATASTRUCTURE_RBTREEUTIL_H
 
-
+#include <iostream>
+#include <queue>
 #include "RBTree.h"
 
 void inorderHelper(Node *root) {
@@ -46,7 +47,7 @@ void levelOrderHelper(Node *root) {
     while (!q.empty()) {
         Node *tmp = q.front();
         std::cout << tmp->data << " ";
-        q.pop;
+        q.pop();
 
         if (tmp->left != nullptr) {
             q.push(tmp->left);
